@@ -1,0 +1,190 @@
+body {
+  font-family: 'Quantico', sans-serif;
+}
+
+h1 {
+  font-family: 'ZCOOL KuaiLe', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 64px;
+  letter-spacing: 10px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.title-text {
+  margin-top: 1%;
+  margin-left: 17.5%;
+  padding-bottom: 1%;
+}
+
+/* About Button */
+.about-container {
+  position: fixed;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-button {
+  font-family: 'ZCOOL KuaiLe', sans-serif;
+  position: fixed;
+  right: 60px;
+  padding-top: 45px;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.about-button:hover {
+  color: #333;
+}
+
+.about-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+}
+
+.about-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.about-popup {
+  margin: 200px auto;
+  padding: 20px;
+  background: #222;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+}
+
+.about-popup .about-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  text-decoration: none;
+  color: #333;
+}
+
+.about-popup .about-close:hover {
+  color: #fff;
+}
+
+.about-popup .about-content {
+  max-height: 30%;
+  overflow: auto;
+  font-size: 1rem;
+}
+
+.about-content {
+  color: #fff;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+
+/* Background Carousel */
+.bg-carousel {
+  height: 85%;
+  position: fixed;
+}
+
+.bg-carousel-inner {
+  text-align: center;
+}
+
+.bg-image {
+  width: 60%;
+}
+
+/* Cel Carousel */
+.cel-sheet {
+  height: auto;
+  width: 52.5%;
+  position: fixed;
+}
+
+.cel-sheet:hover {
+  cursor: grab;
+  height: auto;
+  width: 53%;
+}
+
+.buttonsL, .buttonsR {
+  top: 65px;
+}
+
+.buttonsL {
+  left: -125px;
+}
+
+.buttonsR {
+  right: -125px;
+}
+
+/* Media Queries */
+@media all and (max-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .title-text {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .popup {
+    bottom: 100px;
+  }
+
+  .popup .content {
+    margin: 10px auto;
+    font-size: 0.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    right: 35px;
+    padding-top: 30px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  .title-text {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .popup {
+    width: 70%;
+  }
+
+  .button {
+    font-size: 0.5rem;
+    right: 15px;
+    padding-top: 10px;
+  }
+}
